@@ -2,9 +2,9 @@ export const SITE = {
   name: "Shine Cars",
   tagline: "Ride Safe, Ride Smart",
   description: "Premium transport service providing reliable, comfortable, and safe rides across the UK. Airport transfers, corporate accounts, and more.",
-  phone: "+44 123 456 7890",
+  phone: "01945 243006",
   email: "info@shinecars.co.uk",
-  address: "London, United Kingdom",
+  address: "9 Station Road, March, PE15 8LB, United Kingdom",
   website: "https://shinecars.co.uk",
 };
 

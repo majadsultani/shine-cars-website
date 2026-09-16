@@ -47,7 +47,7 @@ const sections = [
   {
     title: "Contact Us",
     content:
-      "If you have any questions about this privacy policy or how we handle your data, please contact us at info@shinecars.co.uk or call us on +44 123 456 7890.",
+      "If you have any questions about this privacy policy or how we handle your data, please contact us at info@shinecars.co.uk or call us on 01945 243006.",
   },
 ];
 
