@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ArrowRight, Shield, Clock, Star } from "lucide-react";
 import GradientButton from "@/components/ui/GradientButton";
-import BookingCard from "@/components/home/BookingCard";
 import HeroStats from "@/components/home/HeroStats";
 
 export default function HeroSection() {
@@ -42,9 +41,7 @@ export default function HeroSection() {
       {/* Main Content */}
       <div className="relative flex-1 flex items-center">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-8 sm:pb-16 w-full">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
-            {/* Left: Text */}
-            <div className="flex-1 text-center lg:text-left">
+          <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -60,7 +57,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-[2.75rem] leading-[1.05] sm:text-6xl lg:text-[4.5rem] font-extrabold text-white tracking-tight"
+                className="text-[2.75rem] leading-[1.05] sm:text-6xl lg:text-[5rem] font-extrabold text-white tracking-tight"
               >
                 Ride Safe,
                 <br />
@@ -79,7 +76,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.25 }}
-                className="mt-5 text-base sm:text-lg text-white/55 max-w-md mx-auto lg:mx-0 leading-relaxed"
+                className="mt-6 text-base sm:text-lg lg:text-xl text-white/55 max-w-xl mx-auto leading-relaxed"
               >
                 Premium rides with professional drivers and modern vehicles.
                 Airport transfers, corporate travel, and city rides across the UK.
@@ -89,10 +86,10 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="mt-8 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start"
+                className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
               >
                 <GradientButton href="/booking" size="lg">
-                  Book a Ride <ArrowRight className="w-5 h-5" />
+                  Book Your Ride <ArrowRight className="w-5 h-5" />
                 </GradientButton>
                 <GradientButton href="/services" variant="outline" size="lg">
                   Explore Services
@@ -104,23 +101,12 @@ export default function HeroSection() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.55 }}
-                className="mt-10 flex flex-wrap justify-center lg:justify-start gap-5"
+                className="mt-12 flex flex-wrap justify-center gap-6 sm:gap-8"
               >
                 <TrustBadge icon={Shield} text="Fully Insured" />
                 <TrustBadge icon={Clock} text="24/7 Service" />
                 <TrustBadge icon={Star} text="4.9 Rating" />
               </motion.div>
-            </div>
-
-            {/* Right: Quick Booking Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.7 }}
-              className="w-full sm:w-[420px] lg:w-[400px] shrink-0"
-            >
-              <BookingCard />
-            </motion.div>
           </div>
         </div>
       </div>
