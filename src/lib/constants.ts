@@ -3,7 +3,7 @@ export const SITE = {
   tagline: "Ride Safe, Ride Smart",
   description: "Premium transport service providing reliable, comfortable, and safe rides across the UK. Airport transfers, corporate accounts, and more.",
   phone: "01945 243006",
-  email: "info@shinecars.co.uk",
+  email: "Admin@shinecars.co.uk",
   address: "9 Station Road, March, PE15 8LB, United Kingdom",
   website: "https://shinecars.co.uk",
 };
