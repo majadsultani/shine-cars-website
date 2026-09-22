@@ -67,7 +67,7 @@ const sections = [
   {
     title: "Contact Us",
     content:
-      "If you have any questions about this privacy policy or how we handle your data, please contact us at info@shinecars.co.uk or call us on 01945 243006. Our registered address is 9 Station Road, March, PE15 8LB, United Kingdom.",
+      "If you have any questions about this privacy policy or how we handle your data, please contact us at Admin@shinecars.co.uk or call us on 01945 243006. Our registered address is 9 Station Road, March, PE15 8LB, United Kingdom.",
   },
 ];
 

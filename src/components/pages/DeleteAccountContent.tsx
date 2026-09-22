@@ -81,10 +81,10 @@ export default function DeleteAccountContent() {
                   <div className="flex items-start gap-3">
                     <span className="font-semibold text-navy text-sm min-w-[60px]">Email:</span>
                     <a
-                      href="mailto:info@shinecars.co.uk?subject=Account%20Deletion%20Request"
+                      href="mailto:Admin@shinecars.co.uk?subject=Account%20Deletion%20Request"
                       className="text-sm text-crimson hover:underline"
                     >
-                      info@shinecars.co.uk
+                      Admin@shinecars.co.uk
                     </a>
                   </div>
                   <div className="flex items-start gap-3">
