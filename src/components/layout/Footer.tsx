@@ -9,7 +9,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 const quickLinks = [
   { label: "Airport Transfers", href: "/services" },
   { label: "Corporate Accounts", href: "/services" },
-  { label: "Our Fleet", href: "/fleet" },
+  // { label: "Our Fleet", href: "/fleet" },
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Terms & Conditions", href: "/terms" },
 ];
@@ -106,10 +106,10 @@ export default function Footer() {
                   {SITE.email}
                 </a>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <span className="text-white/60">{SITE.address}</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

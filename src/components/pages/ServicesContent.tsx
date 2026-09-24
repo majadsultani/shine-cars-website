@@ -40,12 +40,12 @@ const services = [
     desc: "Comfortable long-distance travel with experienced drivers at competitive rates for intercity journeys.",
     features: ["Competitive rates", "Comfort stops", "Experienced drivers", "Door-to-door"],
   },
-  {
-    icon: Accessibility,
-    title: "Wheelchair Accessible",
-    desc: "Fully equipped accessible vehicles ensuring comfortable and dignified travel for all passengers.",
-    features: ["Ramp access", "Trained drivers", "Spacious interiors", "Easy booking"],
-  },
+  // {
+  //   icon: Accessibility,
+  //   title: "Wheelchair Accessible",
+  //   desc: "Fully equipped accessible vehicles ensuring comfortable and dignified travel for all passengers.",
+  //   features: ["Ramp access", "Trained drivers", "Spacious interiors", "Easy booking"],
+  // },
 ];
 
 export default function ServicesContent() {
