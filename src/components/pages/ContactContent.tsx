@@ -10,7 +10,7 @@ import { SITE } from "@/lib/constants";
 const contactInfo = [
   { icon: Phone, label: "Phone", value: SITE.phone, href: `tel:${SITE.phone}` },
   { icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
-  { icon: MapPin, label: "Address", value: SITE.address, href: "#" },
+  // { icon: MapPin, label: "Address", value: SITE.address, href: "#" },
   { icon: Clock, label: "Hours", value: "24/7 Available", href: "#" },
 ];
 

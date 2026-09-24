@@ -13,7 +13,7 @@ const values = [
 ];
 
 const stats = [
-  { value: "2018", label: "Founded" },
+  // { value: "2018", label: "Founded" },
   { value: "10K+", label: "Happy Customers" },
   { value: "500+", label: "Professional Drivers" },
   { value: "50+", label: "Cities Covered" },
@@ -40,7 +40,7 @@ export default function AboutContent() {
                 Redefining <span className="gradient-text">Transport</span> in the UK
               </h2>
               <p className="mt-5 text-navy/60 leading-relaxed">
-                Founded in 2018, Shine Cars began with a simple mission: to provide safe,
+                Shine Cars began with a simple mission: to provide safe,
                 reliable, and premium transport services across the United Kingdom. What
                 started as a small fleet of vehicles has grown into one of the most trusted
                 transport companies in the country.
@@ -53,7 +53,7 @@ export default function AboutContent() {
             </AnimatedSection>
 
             <AnimatedSection direction="right">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-4">
                 {stats.map((s, i) => (
                   <motion.div
                     key={s.label}

@@ -12,7 +12,7 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Fleet", href: "/fleet" },
+  // { label: "Fleet", href: "/fleet" },
   { label: "Booking", href: "/booking" },
   { label: "Contact", href: "/contact" },
   { label: "FAQ", href: "/faq" },
@@ -44,11 +44,11 @@ export const SERVICES = [
     description: "Comfortable long-distance travel with experienced drivers. Competitive rates for intercity journeys.",
     icon: "MapPin",
   },
-  {
-    title: "Wheelchair Accessible",
-    description: "Fully equipped accessible vehicles ensuring comfortable and dignified travel for all passengers.",
-    icon: "Accessibility",
-  },
+  // {
+  //   title: "Wheelchair Accessible",
+  //   description: "Fully equipped accessible vehicles ensuring comfortable and dignified travel for all passengers.",
+  //   icon: "Accessibility",
+  // },
 ];
 
 export const FLEET = [
@@ -127,8 +127,8 @@ export const FAQ_ITEMS = [
     question: "Are your drivers background checked?",
     answer: "Absolutely. All our drivers undergo thorough background checks, hold valid licences, and receive regular training to ensure your safety.",
   },
-  {
-    question: "Do you offer wheelchair accessible vehicles?",
-    answer: "Yes, we have a fleet of fully accessible vehicles. Please select the accessible option when booking, or contact us to arrange.",
-  },
+  // {
+  //   question: "Do you offer wheelchair accessible vehicles?",
+  //   answer: "Yes, we have a fleet of fully accessible vehicles. Please select the accessible option when booking, or contact us to arrange.",
+  // },
 ];
