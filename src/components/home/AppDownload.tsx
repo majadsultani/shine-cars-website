@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { Smartphone, ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
@@ -23,7 +22,7 @@ export default function AppDownload() {
             <div className="flex-1 text-center lg:text-left">
               <AnimatedSection>
                 <span className="text-gold font-semibold text-sm uppercase tracking-widest">
-                  Coming Soon
+                  Available Now
                 </span>
                 <h2 className="mt-3 text-4xl sm:text-5xl font-extrabold text-white leading-tight">
                   Download Our{" "}
@@ -34,47 +33,41 @@ export default function AppDownload() {
                   and more — all from the convenience of your phone.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <button aria-label="Download on App Store - Coming Soon" className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3.5 rounded-xl hover:bg-white/15 transition-all group">
+                  <a href="https://apps.apple.com/gb/app/shine-cars/id6823728193" target="_blank" rel="noopener noreferrer" aria-label="Download on App Store" className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3.5 rounded-xl hover:bg-white/15 transition-all group">
                     <Smartphone className="w-6 h-6 text-gold" />
                     <div className="text-left">
-                      <div className="text-[10px] uppercase tracking-wider text-white/60">Coming Soon</div>
+                      <div className="text-[10px] uppercase tracking-wider text-white/60">Download on the</div>
                       <div className="font-semibold">App Store</div>
                     </div>
                     <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-                  </button>
-                  <button aria-label="Download on Google Play - Coming Soon" className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3.5 rounded-xl hover:bg-white/15 transition-all group">
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.shinecars.customer" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play" className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3.5 rounded-xl hover:bg-white/15 transition-all group">
                     <Smartphone className="w-6 h-6 text-gold" />
                     <div className="text-left">
-                      <div className="text-[10px] uppercase tracking-wider text-white/60">Coming Soon</div>
+                      <div className="text-[10px] uppercase tracking-wider text-white/60">Get it on</div>
                       <div className="font-semibold">Google Play</div>
                     </div>
                     <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-                  </button>
+                  </a>
                 </div>
               </AnimatedSection>
             </div>
 
-            {/* Phone Mockup */}
+            {/* QR Code */}
             <AnimatedSection direction="right" className="flex-shrink-0">
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="relative"
-              >
-                <div className="w-56 h-[460px] rounded-[2.5rem] bg-gradient-to-b from-white/10 to-white/5 border-2 border-white/20 p-2.5 backdrop-blur-sm">
-                  <div className="w-full h-full rounded-[2rem] overflow-hidden relative">
-                    <Image
-                      src="/images/app-screenshot.png"
-                      alt="Shine Cars Mobile App"
-                      fill
-                      className="object-cover object-top"
-                      sizes="224px"
-                    />
-                  </div>
+              <div className="relative">
+                <div className="w-56 sm:w-64 rounded-2xl overflow-hidden border-2 border-white/20 bg-white/10 backdrop-blur-sm p-3">
+                  <Image
+                    src="/images/qr-code.png"
+                    alt="Scan to download Shine Cars app"
+                    width={240}
+                    height={240}
+                    className="w-full h-auto rounded-xl"
+                  />
                 </div>
                 {/* Glow */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-crimson/20 to-gold/20 rounded-[3rem] blur-2xl -z-10" />
-              </motion.div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-crimson/20 to-gold/20 rounded-[2rem] blur-2xl -z-10" />
+              </div>
             </AnimatedSection>
           </div>
         </div>
